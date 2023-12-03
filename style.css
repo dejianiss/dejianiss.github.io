@@ -1,0 +1,613 @@
+/* Universal styling */
+* {
+ 
+}
+
+
+/* HTML and Body Styles */
+html {
+    color: black;
+    font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header and Navigation Styles */
+header {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+.align {
+    align-items: center;
+    display: flex;
+}
+
+.logos {
+    max-width: 120px;
+    height: auto;
+}
+
+nav li {
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px;
+}
+
+.logo {
+    margin-right: 20px;
+    width: fit-content;
+}
+
+li a {
+    font-size: 1rem;
+    padding: 3px;
+    text-decoration: none;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+li a:hover,
+.contribution .goal {
+    color: #f64646;
+}
+
+/* Form Styles */
+
+input {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    max-width: 200px;
+    margin: 5px;
+    color: #666666;
+    box-shadow: 0 0 10px #666666;
+}
+
+.icon {
+    height: 20px;
+    margin: 10px;
+}
+
+.donate-form {
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
+    header {
+        display: block;
+        height: auto;
+    }
+
+
+    li a {
+        font-size: 1rem;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    .logos {
+        max-width: 130px;
+        height: auto;
+    }
+
+    .information {
+        padding: 10px 80px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .banner p {
+        font-size: 5px;
+        font-weight: light;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+@media only screen and (min-width: 100px) {
+    #donate-contact {
+        display: block;
+        height: auto;
+
+
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width:1000px) {
+
+    .internet-feature {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    #featured-block {
+        margin: 0;
+        display: block;
+        max-width: 100%;
+    }
+
+
+
+    #internet-id {
+        display: block;
+
+    }
+
+    #images-id {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+
+
+
+
+    }
+
+
+    .goal {
+        display: inline;
+    }
+
+
+    #internet-feature-id {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #registration {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+
+
+    #mission-causes {
+        margin: 0;
+    }
+
+    #width-s {
+
+        max-height: 300px;
+        margin: 10px;
+        width: fit-content;
+
+
+    }
+
+    #width-s p {
+        width: fit-content;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width:650px) {
+
+    #about-s {
+        display: block;
+        padding: 10px;
+        height: auto;
+        margin: 0;
+    }
+
+
+    #about-image {
+        width: 600px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    #about-s h2 {
+        margin-top: 40px;
+
+    }
+
+    #about-s h2,
+    #about-s p,
+    #about-s a {
+        margin-left: 0;
+    }
+}
+
+/* Banner Image Animation */
+.banner-img {
+    background-image: url('images/banner-bg.png');
+    background-image: url('images/charity 2.jpeg');
+    background-image: url('images/charity 3.jpeg');
+    background-image: url('images/charity 4.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
+    animation: animate 16s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        background-image: url('images/banner-bg.png');
+    }
+
+    20% {
+        background-image: url('images/charity 2.jpeg');
+    }
+
+    40% {
+        background-image: url('images/charity 3.jpeg');
+    }
+
+    60% {
+        background-image: url('images/charity 4.jpeg');
+    }
+
+    80% {
+        background-image: url('images/charity 4.jpeg');
+    }
+}
+
+/* Banner and Call-to-Action Styles */
+.banner {
+    display: flex;
+    color: #fff;
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+a {
+    color: white;
+    border-radius: 2px;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.read {
+    background-color: #f64646;
+    margin-bottom: 10px;
+}
+
+.read:hover,
+.fundraiser:hover,
+.contribution .beijing:hover {
+    background-color: #120a78;
+}
+
+h1 {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    font-size: 60px;
+    max-width: 600px;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-top: -20px;
+    text-align: center;
+    max-width: 1000px;
+}
+
+/* Donation Section Styles */
+.donation {
+    text-align: center;
+    background-color: #fff;
+    height: auto;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+
+
+}
+
+.donation h2 {
+    color: black;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 10px;
+
+}
+
+/* Button Styles */
+.button {
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    background-color: #120a78;
+    color: #fff;
+    padding: 10px 50px;
+}
+
+.register {
+    display: flex;
+    margin: 0 auto;
+    max-width: 850px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+
+}
+
+.volunteering {
+    width: 250px;
+    background-color: #120a78;
+    height: 350px;
+    padding: 0 10px;
+    margin: 0;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+
+img[src*='icon-1'],
+img[src*='icon-2'],
+img[src*='icon-3'] {
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+}
+
+.fundraiser,
+.contribution .beijing,
+.button:hover,
+.volunteering:hover,
+.dates a {
+    background-color: #f64646;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.register p {
+    font-weight: lighter;
+    font-size: 1rem;
+    width: 10rem;
+    margin: 0 auto;
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+.register a {
+    border: 1px solid white;
+    padding: 5px 10px;
+
+}
+
+img[src*='about-img'] {
+    max-width: 100%;
+    height: auto;
+    width: 350px;
+}
+
+.about {
+    display: flex;
+    background-color: #120a78;
+    margin-top: 60px;
+    height: 500px;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.about-size {
+    margin-left: 30px;
+    margin: 0 auto;
+    color: #fff;
+    width: fit-content;
+    padding-right: 20px;
+
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-top: 70px;
+
+
+}
+
+.about h2,
+.about a,
+.about p {
+    margin: 0 auto;
+    margin-left: 50px;
+
+}
+
+
+.about a {
+    border: 1px solid white;
+}
+
+.about p {
+
+    width: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+
+
+}
+
+.causes {
+    margin-left: 150px;
+    margin-right: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: black;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.images {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 0 50px;
+
+}
+
+
+img[src*='img-1'],
+img[src*='img-2'],
+img[src*='img-3'],
+img[src*='img-4'],
+img[src*='img-5'],
+img[src*='img-6'] {
+    max-width: 40%;
+    height: auto;
+    margin: 40px 15px;
+
+}
+
+img[src*='img-1'],
+img[src*='img-2'],
+img[src*='img-5'],
+img[src*='img-6'] {
+    float: right;
+
+}
+
+.featured,
+.internet-feature {
+    color: black;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.featured-cause,
+.education {
+    margin-left: 60px;
+}
+
+.featured-cause {
+    margin-bottom: 10px;
+}
+
+.education {
+    display: flex;
+
+}
+
+.give-education {
+    margin-left: 20px;
+}
+
+img[src*='news-img'],
+img[src*='images/img-7.png'],
+img[src*='images/img-8.png'] {
+    max-width: 40%;
+    height: 100%;
+
+}
+
+img[src*='images/img-7.png'],
+img[src*='images/img-8.png'] {
+
+    margin-top: 20px;
+}
+
+.give-education {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.give-education h3,
+.internet-repeat h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.give-education p {
+    line-height: 1.5rem;
+    font-weight: lighter;
+
+
+}
+
+.contribution {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+
+}
+
+.contribution h4,
+.internet-repeat h4 {
+    margin-right: 20px;
+    font-size: 1.3rem;
+    color: #120a78;
+}
+
+
+.contribution a {
+    margin-right: 20px;
+    background-color: #120a78;
+    padding: 10px 20px;
+}
+
+
+.internet {
+    display: flex;
+
+}
+
+.internet-repeat {
+    margin: 20px;
+}
+
+.internet-repeat h3 {
+    font-size: 1.5rem;
+}
+
+.internet-repeat p {
+    font-weight: lighter;
+    line-height: 1.5rem;
+}
+
+.internet-feature {
+    max-height: 100%;
+}
